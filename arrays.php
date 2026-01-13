@@ -103,7 +103,9 @@
 
 
     echo "<br>";
-    echo "<span style='color: red; font-weight: bold; font-size: 24px;'>Ejercicio 7 </span><br>";
+    echo "<span style='color: red; 
+    font-weight: bold; font-size: 24px;
+    '>Ejercicio 7 </span><br>";
 
     $totalnotas = 0;
     $cou = 0;
@@ -113,15 +115,29 @@
         $cou++;
     }
 
-    $resultado = $totalnotas / $cou;
-    echo "Media de las notas: " . $resultado;
+    $resultado = $totalnotas / $cou; 
+    echo "Media de las notas: " . $resultado; 
     echo "<br>";
 
-    echo "Alumnos con nota por encima de la media: ";
 
     $encimaMedia = 0;
+    $encimaMedia = 0;
+    $alumnosEncima = "";
 
-    
+    foreach ($notas as $nombre => $nota) {
+        if ($nota > $resultado) {
+            $encimaMedia++;
+            $alumnosEncima .= $nombre . " " . " ";
+        }
+    }
+
+    echo "Alumnos con nota por encima de la media: " . $alumnosEncima;
+     
+    echo "<br>";
+    echo "<span style='color: red; 
+    font-weight: bold; font-size: 24px;
+    '>Ejercicio 8 </span><br>";
+    echo "<br>";
     ?>
 
 </body>
