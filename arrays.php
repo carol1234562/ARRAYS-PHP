@@ -138,6 +138,11 @@
     font-weight: bold; font-size: 24px;
     '>Ejercicio 8 </span><br>";
     echo "<br>";
+
+    echo "texto";
+    echo "texto"; 
+
+
     ?>
 
 </body>
