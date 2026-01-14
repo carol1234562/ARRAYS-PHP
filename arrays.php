@@ -101,7 +101,7 @@
     echo "<br>";
 
 
-
+    //ejercicio 7 
     echo "<br>";
     echo "<span style='color: red; 
     font-weight: bold; font-size: 24px;
@@ -132,6 +132,8 @@
     echo "Alumnos con nota por encima de la media: " . $alumnosEncima;
      
     echo "<br>";
+
+    //ejercicio 8
     echo "<span style='color: red; 
     font-weight: bold; font-size: 24px;
     '>Ejercicio 8 </span><br>";
