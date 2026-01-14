@@ -119,8 +119,6 @@
     echo "Media de las notas: " . $resultado; 
     echo "<br>";
 
-
-    $encimaMedia = 0;
     $encimaMedia = 0;
     $alumnosEncima = "";
 
@@ -139,13 +137,17 @@
     '>Ejercicio 8 </span><br>";
     echo "<br>";
 
-    echo "texto";
-    echo "texto"; 
+    $mejorAlumno= ""; 
+    $mejorNota = 0; 
 
-    echo "texto";
-    echo "texto"; 
-
-
+    foreach ($notas as $nombre => $nota) {
+    if ($nota > $mejorNota) {
+        $mejorNota = $nota; 
+        $mejorAlumno =$nombre; 
+        }
+    }
+        echo "La nota más alta es " . $mejorNota . "<br>"; 
+        echo "El mejor alumno es " . $mejorAlumno . "<br>"; 
 
     ?>
 
